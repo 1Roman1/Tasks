@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ниспадающее меню</title>
+        <meta charset="utf-8">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                width: 150px;
+                margin: 50px;
+                float: left;
+            }
+            .head ul{
+                box-shadow: 0 0 5px black;
+                background: #fff;
+            }
+            li{
+                list-style: none;
+            }
+            .head li{
+                display: none;
+            }
+            p, li{
+                color: blue;
+                padding: 5px;
+            }
+            p{
+                text-decoration: underline;
+                position: relative;
+                display: inline-block;
+                background: #fff;
+                border-radius: 5px 5px 0 0;
+            }
+            .head:hover li{
+                display: block;
+            }
+            .head:hover p{
+                color: black;
+                text-decoration: none;
+            }
+            .head:hover p::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                box-shadow: 0 0 5px black;
+                z-index: -1;
+                border-radius: 5px 5px 0 0;
+            }
+            .head li:hover{
+                background: #37ABFF;
+                color: #fff;
+            }
+            div:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li class="head"><p>Фаил</p>
+                    <ul>
+                        <li>Новый</li>
+                        <li>Открыть</li>
+                        <li>Сохранить</li>
+                        <li>Закрыть</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="head"><p>Правка</p>
+                    <ul>
+                        <li>Вырезать</li>
+                        <li>Копировать</li>
+                        <li>Вставить</li>
+                        <li>Удалить</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+    </body>
+</html>

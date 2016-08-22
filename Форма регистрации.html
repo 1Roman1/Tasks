@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Форма регистрации</title>
+        <meta charset="utf-8">
+        <style>
+            form{
+                width: 600px;
+                font-family: arial, sans-serif;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 26px;
+                margin: 50px auto;
+            }
+            section{
+                border-radius: 3px;
+                border: 1px solid #D9DEDF;
+                margin-bottom: 10px;
+            }
+            fieldset{
+                border: none;
+            }
+            input:valid + span:after{
+                content: url(image/Ok1.png);
+                margin: 5px;
+            }
+            #number:invalid + span:after{
+                content: url(image/No1.png) ' Неправильное число';
+                margin: 5px;
+                color: #CC0000;
+            }
+            #number{
+                margin-left: 100px;
+            }
+            input{
+                font-weight: bold;
+                padding: 3px;
+                border: 1px solid #C1C1C1;
+            }
+            label{
+                display: block;
+                float: left;
+                width: 100px;
+            }
+            footer input{
+                margin: 15px 0 15px 120px;
+                padding: 5px 10px;
+                font-family: arial;
+                border-radius: 20px;
+                color: #fff;
+                border: 1px solid #00aa00;
+
+                background: radial-gradient(circle at 8px 8px, #41C641 5px, transparent 6px),
+                            radial-gradient(circle at 145px 8px, #41C641 5px, transparent 6px), 
+                            linear-gradient(90deg, #079507, #079507 10px, transparent 10px, transparent 145px, #079507 145px),
+                            linear-gradient(180deg, transparent 1px, #41C641 3px, #41C641 14px, transparent 14px),
+                            radial-gradient(ellipse farthest-corner at 50% 100%, #00E000 50px, transparent 70px)
+                            #079507;
+
+
+                background: -webkit-radial-gradient(8px 8px, circle, #41C641 5px, transparent 6px),
+                            -webkit-radial-gradient(145px 8px, circle, #41C641 5px, transparent 6px), 
+                            -webkit-linear-gradient(0deg, #079507, #079507 10px, transparent 10px, transparent 145px, #079507 145px),
+                            -webkit-linear-gradient(-90deg, transparent 1px, #41C641 3px, #41C641 14px, transparent 14px),
+                            -webkit-radial-gradient(50% 100%, farthest-corner ellipse, #00E000 50px, transparent 70px)
+                             #079507;
+                background: -moz-radial-gradient(10px 7.7px, circle, #41C641 5px, transparent 6px),
+                            -moz-radial-gradient(145px 8px, circle, #41C641 5px, transparent 6px), 
+                            -moz-linear-gradient(0deg, #079507, #079507 10px, transparent 10px, transparent 145px, #079507 145px),
+                            -moz-linear-gradient(-90deg, transparent 3px, #41C641 3px, #41C641 14px, transparent 14px),
+                            -moz-radial-gradient(50% 100%, farthest-corner ellipse, #00E000 50px, transparent 70px)
+                             #079507;
+                background: -o-radial-gradient(8px 8px, circle, #41C641 5px, transparent 6px),
+                            -o-radial-gradient(145px 8px, circle, #41C641 5px, transparent 6px), 
+                            -o-linear-gradient(0deg, #079507, #079507 10px, transparent 10px, transparent 145px, #079507 145px),
+                            -o-linear-gradient(-90deg, transparent 1px, #41C641 3px, #41C641 14px, transparent 14px),
+                            -o-radial-gradient(50% 100%, farthest-corner ellipse, #00E000 50px, transparent 70px)
+                             #079507;
+                
+
+            }
+            footer{
+                background: #E3E3E3;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="get">
+                <section>
+                    <fieldset>
+                        <p><label for="name">Имя</label>
+                        <input type="text" name="name" id="name"><span></span></p>
+                        <p><label for="surname">Фамилия</label>
+                        <input type="text" name="surname" id="surname"><span></span></p>
+                        <p><label for="city">Город</label>
+                        <input type="text" name="city" id="city"><span></span></p>
+                    </fieldset>
+                    <fieldset>
+                        <p><label for="email">Почта</label>
+                        <input type="email" name="email" id="imail"><span></span></p>
+                        <p><label for="password">Пароль</label>
+                        <input type="password" name="password" required><span></span></p>
+                        <p><label for="pasword2">Повторите</label>
+                        <input type="password" name="password2" id="pasword2"><span></span></p>
+                    </fieldset>
+                    <fieldset>Введите число с картинки
+                        <p><label for="number"></label>
+                        <input type="text" name="number" id="number" required><span></span></p>
+                    </fieldset>
+                </section>
+                <footer>
+                    <input type="submit" value="Зарегестрироваться">
+                </footer>
+        </form>
+    </body>
+</html>

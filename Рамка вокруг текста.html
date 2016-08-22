@@ -1,0 +1,89 @@
+<!DCOTYPE html>
+<html>
+    <head>
+        <title>Рамка вокруг текста</title>
+        <meta charset="utf-8">
+        <style>
+/*
+            p{
+                margin: 150px auto;
+                background: red;
+                color: #fff;
+                width: 200px;
+                padding: 10px;
+                border: 1px solid #fff;  
+                outline: 1px solid red;
+            }
+*/
+/*
+            p{
+                background: red;
+                margin: 150px auto;
+                width: 200px;
+                padding: 10px;
+                color: #fff;
+                position: relative;
+            }
+            p::before{
+                content: '';
+                
+                top: -2px;
+                right: -2px;
+                bottom: -2px;
+                left: -2px;
+                background: red;
+                
+            }        
+            p::after{
+                content: '';
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                left: -1px;
+                background: #fff;
+            }
+            p::before, p::after{
+                position: absolute;
+                z-index: -1;
+            }
+*/
+/*
+            p{
+                background: red;
+                margin: 150px auto;
+                width: 200px;
+                padding: 10px;
+                color: #fff;
+                box-shadow: 0 0 0 1px #fff,
+                            0 0 0 2px red;
+            }          
+*/
+            p{
+                width: 200px;
+                height: 25px;
+                margin: 150px auto; 
+                text-align: center;
+                line-height: 25px;
+                color: #fff;
+                background: -o-linear-gradient(0deg,  #f05258 1px, transparent 1px, transparent 24px, #f05258 24px, #f05258 25px),
+                            -o-linear-gradient(90deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 198px, #fff 198px, #fff 199px, #f05258 199px, #f05258 200px),
+                            -o-linear-gradient(0deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 23px, #fff 23px, #fff 24px, #f05258 24px, #f05258 25px) #f05258;
+                background: -webkit-linear-gradient(90deg,  #f05258 1px, transparent 1px, transparent 24px, #f05258 24px, #f05258 25px),
+                            -webkit-linear-gradient(0deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 198px, #fff 198px, #fff 199px, #f05258 199px, #f05258 200px),
+                            -webkit-linear-gradient(90deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 23px, #fff 23px, #fff 24px, #f05258 24px, #f05258 25px) #f05258;
+                background: -moz-linear-gradient(90deg,  #f05258 1px, transparent 1px, transparent 24px, #f05258 24px, #f05258 25px),
+                            -moz-linear-gradient(0deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 198px, #fff 198px, #fff 199px, #f05258 199px, #f05258 200px),
+                            -moz-linear-gradient(90deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 23px, #fff 23px, #fff 24px, #f05258 24px, #f05258 25px) #f05258;
+/*
+               background: linear-gradient(0deg,  #f05258 1px, transparent 1px, transparent 24px, #f05258 24px, #f05258 25px),
+                            linear-gradient(90deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 198px, #fff 198px, #fff 199px, #f05258 199px, #f05258 200px),
+                            linear-gradient(0deg, #f05258 1px, #fff 1px, #fff 2px, transparent 2px, transparent 23px, #fff 23px, #fff 24px, #f05258 24px, #f05258 25px) #f05258;
+*/
+                
+            }
+        </style>
+    </head>
+    <body>
+        <p>Рамка вокруг текста</p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Яблокы</title>
+        <meta charset="utf-8">
+        <style>
+            div{
+                min-height: 150px;
+                min-width: 200px;
+                width: 200px;
+                background: url(image/ranetka.jpg) no-repeat;
+                margin: 100px auto;
+                position: relative;
+            }
+            div::before{
+                content: '';
+                position: absolute;
+                background: #fff;
+                width: 220px;
+                height: 170px;
+                right: -10px;
+                top: -10px;
+                border: 1px solid #CDCDCE;
+                border-radius: 10px;
+                z-index: -1;
+                box-shadow: 0 60px 80px -60px black;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

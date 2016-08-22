@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Блок с градиентом</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background: linear-gradient(45deg, #FBC686, #FBC686 5%, white 5%, white 45%, #FBC686 45%, #FBC686 55%, white 55%, white 95%, #FBC686 95%, #FBC686);
+                background: -moz-linear-gradient(45deg, #FBC686, #FBC686 5%, white 5%, white 45%, #FBC686 45%, #FBC686 55%, white 55%, white 95%, #FBC686 95%, #FBC686);
+                background: -o-linear-gradient(45deg, #FBC686, #FBC686 5%, white 5%, white 45%, #FBC686 45%, #FBC686 55%, white 55%, white 95%, #FBC686 95%, #FBC686);
+                background: -es-linear-gradient(45deg, #FBC686, #FBC686 5%, white 5%, white 45%, #FBC686 45%, #FBC686 55%, white 55%, white 95%, #FBC686 95%, #FBC686);
+                background: -webkit-linear-gradient(45deg, #FBC686, #FBC686 5%, white 5%, white 45%, #FBC686 45%, #FBC686 55%, white 55%, white 95%, #FBC686 95%, #FBC686);
+                background-size: 100px 100px;
+                
+            }
+            div{
+                min-height: 100px;
+                height: 200px;
+                width: calc(100% - 10px);
+                background: linear-gradient(to bottom, rgba(25, 101, 84, 0.5), rgba(15, 74, 61, 0.5));
+                background: -moz-linear-gradient(to bottom, rgba(25, 101, 84, 0.5), rgba(15, 74, 61, 0.5));
+                background: -o-linear-gradient(to bottom, rgba(25, 101, 84, 0.5), rgba(15, 74, 61, 0.5));
+                background: -es-linear-gradient(to bottom, rgba(25, 101, 84, 0.5), rgba(15, 74, 61, 0.5));
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(25, 101, 84, 0.5)), to(rgba(15, 74, 61, 0.5)));
+                margin: 50px auto;
+                position: relative;
+                border-radius: 10px;
+                border: 3px solid #0F604E;
+            }
+            div::before{
+                content: '';
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background: linear-gradient(to bottom, #FFD300, #FFD300 30%, #EDECDE 30%, #EDECDE);
+                background: -moz-linear-gradient(to bottom, #FFD300, #FFD300 30%, #EDECDE 30%, #EDECDE);
+                background: -o-linear-gradient(to bottom, #FFD300, #FFD300 30%, #EDECDE 30%, #EDECDE);
+                background: -es-linear-gradient(to bottom, #FFD300, #FFD300 30%, #EDECDE 30%, #EDECDE);
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(#FFD300), to(#EDECDE), color-stop(0.3, #FFD300), color-stop(0.3, #EDECDE));
+                width: calc(100% - 20px);
+                height: calc(100% - 20px);
+                border-radius: 10px;
+            }
+            div::after{
+                content: '';
+                width: 40px;
+                height: 40px;
+                background: #FFD300;
+                position: absolute;
+                transform: rotate(45deg);
+                top: 43px;
+                left: 30px;
+                z-index: 1;
+            }
+            h1{
+                font-weight: lighter;
+                z-index: 2;
+                position: absolute;
+                left: 30px;
+                letter-spacing: -1px;
+            }
+            p{
+                position: absolute;
+                z-index: 2;
+                left: 30px;
+                top: 75px;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Заголовок</h1>
+            <p>Содержимое</p>
+        </div>
+    </body>
+</html>

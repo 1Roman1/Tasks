@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Рамка</title>
+        <meta charset="utf-8">
+        <style>
+/*
+            div{
+                height: 400px;
+                min-height: 400px;
+                width: 400px;
+                background: #90CDAF;
+                margin: 150px auto;
+                position: relative;
+            }
+            div::before, div::after{
+                content: '';
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                background: #60B88D;
+                top: -5px;
+                left: -5px;
+            }
+            div::after{
+                content: '';
+                background: #BFE3D1;
+                top: 5px;
+                left: 5px;
+                z-index: -1;
+            }
+*/
+/*
+            div{
+                height: 400px;
+                min-height: 400px;
+                width: 400px;
+                background: #60B88D;
+                margin: 150px auto;
+                box-shadow: 5px 5px #90CDAF,
+                    10px 10px #BFE3D1;
+            }
+*/
+            div{
+                height: 400px;
+                min-height: 400px;
+                width: 400px;
+                background: linear-gradient(to bottom, #60B88D, #60B88D),
+                            linear-gradient(to bottom, #90CDAF, #90CDAF),
+                            linear-gradient(to bottom, #BFE3D1, #BFE3D1);
+                margin: 150px auto;
+                background-repeat: no-repeat;
+                background-size: 95%;
+                background-position: 0 0, 5px 5px, 10px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
